@@ -10,4 +10,13 @@ public interface IOrcamento {
     Orcamento findOrcamento(int id);
 
     Orcamento saveOrcamento(Orcamento o);
+
+    List<Orcamento> findByCidadeOrigem(String cidadeOrigem);
+
+    List<Orcamento> findByCidadeDestino(String cidadeDestino);
+
+    List<Orcamento> findByDataSimulacao(String data);
+
+    List<Orcamento> findByCidadeDataSimulacao(String cidade, String data);
+    }
 }

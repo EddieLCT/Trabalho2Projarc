@@ -10,4 +10,12 @@ public interface IEncomenda {
     Encomenda findEncomenda(int id_encomenda);
 
     Encomenda saveEncomenda(Encomenda e);
+
+    List<Encomenda> findByOrigem(String cidadeOrigem);
+
+    List<Encomenda> findByDestino(String cidadeDestino);
+
+    List<Encomenda> findByData(String data);
+
+    List<Encomenda> findByCidadeData(String cidade, String data);
 }
