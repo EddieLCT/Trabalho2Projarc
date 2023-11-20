@@ -66,9 +66,29 @@ public class CalculaCusto {
         cidades.put("Curitiba", 15);
         cidades.put("São Paulo", 10);
 
+        if(!cidades.containsKey(cidadeOrigem) || !cidades.containsKey(cidadeDestino)){
+            return -1;
+        }
+        
+            double custoBasicoOrigem = cidades.get(cidadeOrigem);     
+            double custoBasicoDestino = cidades.get(cidadeDestino);  
+
+            if(cidadeOrigem.equals(cidadeDestino)){
+                custoBasico = custoBasicoOrigem;
+            } else {
+                custoBasico = custoBasicoOrigem + custoBasicoDestino;
+            }
+
+            int pesoKg = (int) Math.ceil(pesoGramas / 1000.0); // Converte para Kg arredondando para cima
+            double adicionalPeso = calcularAdicionalPeso(pesoKg);
+
+            custoBasico += adicionalPeso;
+
+            // Retorna o custo final da entrega
+            return custoBasico + (custoBasico * 5/100);
         
 
-        return custoBasico; // Se alguma das cidades não estiver na lista de atendimento, retorna 0
+        //return custoBasico; // Se alguma das cidades não estiver na lista de atendimento, retorna 0
     }
 
     private double calcularAdicionalPeso(int pesoKg){
