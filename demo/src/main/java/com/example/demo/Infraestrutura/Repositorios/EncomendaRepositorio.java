@@ -30,4 +30,28 @@ public class EncomendaRepositorio implements IEncomenda {
     public Encomenda saveEncomenda(Encomenda e) {
         return this.er.save(e);
     }
+
+    @Override
+    public List<Encomenda> findByOrigem(String cidadeOrigem) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByOrigem'");
+    }
+
+    @Override
+    public List<Encomenda> findByDestino(String cidadeDestino) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByDestino'");
+    }
+
+    @Override
+    public List<Encomenda> findByData(String data) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByData'");
+    }
+
+    @Override
+    public List<Encomenda> findByCidadeData(String cidade, String data) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByCidadeData'");
+    }
 }

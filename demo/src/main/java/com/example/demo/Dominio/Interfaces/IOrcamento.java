@@ -18,5 +18,4 @@ public interface IOrcamento {
     List<Orcamento> findByDataSimulacao(String data);
 
     List<Orcamento> findByCidadeDataSimulacao(String cidade, String data);
-    }
 }

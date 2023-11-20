@@ -29,5 +29,29 @@ public class OrcamentoRepositorio implements IOrcamento{
     @Override
     public Orcamento saveOrcamento(Orcamento o) {
         return this.io.save(o);
+    }
+
+    @Override
+    public List<Orcamento> findByCidadeOrigem(String cidadeOrigem) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByCidadeOrigem'");
+    }
+
+    @Override
+    public List<Orcamento> findByCidadeDestino(String cidadeDestino) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByCidadeDestino'");
+    }
+
+    @Override
+    public List<Orcamento> findByDataSimulacao(String data) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByDataSimulacao'");
+    }
+
+    @Override
+    public List<Orcamento> findByCidadeDataSimulacao(String cidade, String data) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByCidadeDataSimulacao'");
     }   
 }

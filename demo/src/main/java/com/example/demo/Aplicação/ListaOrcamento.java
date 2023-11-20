@@ -1,5 +1,10 @@
 package com.example.demo.Aplicação;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.demo.Dominio.Entidades.Orcamento;
+
 public class ListaOrcamento {
     private List<Orcamento> orcamentos;
 
