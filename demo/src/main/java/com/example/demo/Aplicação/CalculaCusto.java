@@ -85,7 +85,7 @@ public class CalculaCusto {
             custoBasico += adicionalPeso;
 
             // Retorna o custo final da entrega
-            return custoBasico + (custoBasico * 5/100);
+            return custoBasico + (custoBasico * (5/100));
         
 
         //return custoBasico; // Se alguma das cidades não estiver na lista de atendimento, retorna 0
